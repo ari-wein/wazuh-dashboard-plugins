@@ -108,6 +108,7 @@ jobs:
               export PATH="/usr/bin:$PATH"
               yarn config set registry https://registry.yarnpkg.com;
               git config --global --add safe.directory /home/node/kbn
+              npm rebuild node-sass
               cd /home/node/kbn/plugins/${{ matrix.plugins.container_path }} && yarn && ${{ inputs.command }};
             '
 
