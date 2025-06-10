@@ -104,6 +104,7 @@ jobs:
             ${{ inputs.docker_run_extra_args }} \
             quay.io/wazuh/${platform}-dev:${platform_version} \
             bash -c '
+              curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && apt-get install -y nodejs;
               yarn config set registry https://registry.yarnpkg.com;
               cd /home/node/kbn/plugins/${{ matrix.plugins.container_path }} && yarn && ${{ inputs.command }};
             '
