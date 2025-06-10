@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "yarn plugin-helpers build --opensearch-dashboards-version=$OPENSEARCH_DASHBOARDS_VERSION",
-    "plugin-helpers": "node ../../scripts/plugin_helpers",
+    "plugin-helpers": "node ../../scripts/plugin_helpers --allow-root",
     "osd": "node ../../scripts/osd",
     "test:ui:runner": "node ../../scripts/functional_test_runner.js",
     "test:server": "plugin-helpers test:server",

@@ -11,7 +11,7 @@
     "**/follow-redirects": "^1.15.6"
   },
   "scripts": {
-    "build": "yarn plugin-helpers build --opensearch-dashboards-version=$OPENSEARCH_DASHBOARDS_VERSION",
+    "build": "yarn plugin-helpers --allow-root build --opensearch-dashboards-version=$OPENSEARCH_DASHBOARDS_VERSION",
     "plugin-helpers": "node ../../scripts/plugin_helpers",
     "osd": "node ../../scripts/osd",
     "test:ui:runner": "node ../../scripts/functional_test_runner.js",

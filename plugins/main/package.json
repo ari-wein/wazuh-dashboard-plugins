@@ -37,7 +37,7 @@
     "start": "plugin-helpers start",
     "build": "yarn plugin-helpers build --opensearch-dashboards-version=$OPENSEARCH_DASHBOARDS_VERSION",
     "build:runner": "node scripts/runner build",
-    "plugin-helpers": "node ../../scripts/plugin_helpers",
+    "plugin-helpers": "node ../../scripts/plugin_helpers --allow-root",
     "test:ui:runner": "node ../../scripts/functional_test_runner.js",
     "test:server": "plugin-helpers test:server",
     "test:browser": "plugin-helpers test:browser",
